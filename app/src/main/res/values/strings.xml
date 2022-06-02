@@ -1,0 +1,280 @@
+<resources>
+
+    <string name="top_bar_start_date_txt">Start Date</string>
+    <string name="calender_arrow_description">calender_arrow</string>
+    <string name="top_bar_end_date_txt">End Date</string>
+    <string name="app_name" translatable="false">Smart Diagnostics</string>
+    <string name="not_available">Not Available</string>
+
+    <!-- About Activity -->
+    <string name="about">About</string>
+    <string name="version">2.2.3</string>
+    <string name="version_txt">Version</string>
+    <string name="last_update_txt">Last Update</string>
+    <string name="last_update_date_txt">August 2019</string>
+    <string name="our_team_txt">Our Team</string>
+    <string name="dr_zeeshan_g_txt">Dr. Zeeshan G.</string>
+    <string name="raheem_txt">Raheem T.</string>
+    <string name="imran_g_txt">Imran G.</string>
+    <string name="haseeb_ali_txt">Haseeb A.</string>
+    <string name="hamza_a_txt">Hamza A.</string>
+    <string name="moazzam_n_txt">Moazzam N.</string>
+    <string name="address_title_txt">Address</string>
+    <string name="address_txt">FF 11 Center Point Plaza, E2, Gulberg III</string>
+    <string name="city_txt">Lahore Punjab, Pa;6kistan</string>
+    <string name="city_code_txt">54000</string>
+
+
+    <!-- Eco Report Activity -->
+    <string name="trip_behaviour">Driving Behaviour</string>
+    <string name="harsh_acceleration_txt">Harsh Acceleration:</string>
+    <string name="harsh_braking_txt">Harsh Braking:</string>
+    <string name="harsh_cornering_txt">Harsh Cornering:</string>
+    <string name="over_speeding_txt">Over Speeding:</string>
+    <string name="idle_txt">Idle:</string>
+    <string name="harsh_breaking_msg">Harsh Braking: How many times the vehicle did harsh braking in this trip.</string>
+    <string name="harsh_acceleration_msg">Harsh Acceleration: How many times the vehicle did harsh Acceleration.</string>
+    <string name="idle_msg">Idle: How many times the vehicle was idle/doing nothing.</string>
+    <string name="harsh_corner_msg">Harsh Cornering: How many times the vehicle took a steep turn.</string>
+    <string name="over_speeding_msg">Over Speeding: How many times the vehicle did over speeding.</string>
+    <string name="pie_chart_cornering">Cornering</string>
+    <string name="pie_chart_acceleration">Acceleration</string>
+    <string name="pie_chart_braking">Braking</string>
+    <string name="pie_chart_speeding">Speeding</string>
+    <string name="pie_chart_idling">Idling</string>
+    <string name="pie_chart_title">Car Behaviours</string>
+
+    <!-- Park Lock Activity -->
+    <string name="park_lock">Immobilser</string>
+    <string name="top_bar_park_lock_txt">Immobiliser</string>
+    <string name="car_name_txt" translatable="false">Car Name</string>
+    <string name="current_status_txt">Current Status:</string>
+    <string name="vehicle_category_txt">Vehicle Category:</string>
+    <string name="vehicle_model_txt">Vehicle  Model:</string>
+    <string name="park_lock_txt">Immobiliser:</string>
+    <string name="key_chain_description">Key Chain</string>
+    <string name="park_lock_unlock">Unlocked</string>
+    <string name="park_lock_locked">Locked</string>
+
+    <string name="car">Car</string>
+    <string name="tubewell">Tube Well</string>
+    <string name="bus">Bus</string>
+    <string name="crane">Crane</string>
+    <string name="offroad">Offraod</string>
+    <string name="pickup">Pickup</string>    <!---->
+    <string name="tractor">Tractor</string>
+    <string name="truck">Truck</string>
+    <string name="van">Van</string>
+    <string name="motorcycle">Motorcycle</string>
+
+    <!-- Login Activity -->
+    <string name="login_logo_description" translatable="false">Login Logo</string>
+    <string name="welcome_to_smart_tracking_txt" translatable="false">Smart Diagnostics</string>
+    <string name="sign_in_to_continue" translatable="false">Sign in to continue</string>
+    <string name="username_txt" translatable="false">USERNAME</string>
+    <string name="password_txt" translatable="false">PASSWORD</string>
+    <string name="sign_in_txt" translatable="false">S I G N I N</string>
+    <string name="remember_me_txt" translatable="false">REMEMBER ME</string>
+
+
+    <!-- Main Activity -->
+    <string name="logout_txt">Logout</string>
+    <string name="vehicles_description" translatable="false">Vehicles</string>
+    <string name="vehicles_txt">Vehicle</string>
+    <string name="quit_msg">Would you like to Quit the App?</string>
+    <string name="quit_option_yes">Yes</string>
+    <string name="quit_option_no">No</string>
+    <string name="trfa_button_vehicle_list">Vehicle List</string>
+    <string name="trfa_button_summary_list">Vehicle Summary List</string>
+    <string name="trfa_button_geo_fence">Hide/Show Geo Fence</string>
+    <string name="trfa_button_about">About</string>
+    <string name="trfa_button_change_map">Change Map</string>
+    <string name="bird_eye_view">Bird Eye View</string>
+
+
+    <!-- Splash Screen -->
+    <string name="splash_spleen_logo_description" translatable="false">Splash Spleen Logo</string>
+    <string name="splash_screen_title_description" translatable="false">splashScreenTitle</string>
+
+
+    <!-- Activity Summery -->
+    <string name="total_trips_txt">Total Trips: </string>
+    <string name="total_average_speed_txt">Average Speed: </string>
+    <string name="total_top_speed_txt">Max Speed: </string>
+    <string name="total_distance_txt">Total Distance: </string>
+    <string name="total_trip_distance_txt">Total Trip Distance: </string>
+    <string name="total_duration_txt">Total Duration: </string>
+
+
+    <!-- Activity Trip -->
+    <string name="no_trips_txt">No Trips</string>
+    <string name="exit_txt">exit</string>
+    <string name="car_number_txt">Car Number</string>
+    <string name="Trip">Trip History</string>
+    `
+    <!-- option dialog box -->
+    <string name="park_lock_dialog_box">Immobiliser</string>
+
+
+    <!-- Card View for Car-->
+    <string name="marker_close_description" translatable="false">marker Close</string>
+
+
+    <!-- Trip Item Card -->
+    <string name="ignition_on_txt">Ignition On</string>
+    <string name="ignition_start_address_txt">ignition_start_address</string>
+    <string name="ignition_off_txt">Ignition Off</string>
+    <string name="ignition_stop_address_txt">ignition_stop_address</string>
+    <string name="duration_txt">Duration: </string>
+    <string name="distance_travel_txt">Distance Traveled: </string>
+    <string name="estimate_distance_txt">Estimated Distance</string>
+    <string name="speed_graph_description">Speed Graph</string>
+    <string name="view_on_map_description">View On Map</string>
+    <string name="driving_behaviour_description">Driving Behaviour</string>
+    <string name="idling_description">Idling</string>
+    <string name="view_trip_details_description">View Trip Details</string>
+    <string name="extra_description">Extra</string>
+
+
+    <!-- Compact Adaptor -->
+    <string name="signal_description">Signal</string>
+    <string name="satelite_description">setalite_description</string>
+
+
+    <!-- Event Activity -->
+    <string name="event">Events</string>
+    <string name="no_event_txt">No Events</string>
+
+
+    <!-- idle Activity -->
+    <string name="idle_graph">Idle Graph</string>
+    <string name="idle_enter">Idle Enter</string>
+    <string name="idle_exit">Idle Exit</string>
+
+
+    <!-- live tracking -->
+    <string name="live_tacking">Live Tracking</string>
+
+    <!-- Vehicle Detail -->
+    <string name="vehicle_details">Vehicle Details</string>
+
+    <!-- Trip Route -->
+    <string name="trip_route">Trip Route</string>
+    <string name="start_point">Start Point</string>
+    <string name="end_point">End Point</string>
+    <string name="harsh_acceleration_txt_route">Harsh Acceleration</string>
+    <string name="harsh_braking_txt_route">Harsh Braking</string>
+    <string name="harsh_cornering_txt_route">Harsh Cornering</string>
+    <string name="over_speeding_txt_route">Over Speeding</string>
+    <string name="idle_txt_route">Idle</string>
+    <string name="total_trips_route">Total Trips: </string>
+    <string name="total_average_route">Avg Speed: </string>
+    <string name="total_top_speed_route">Top Speed: </string>
+    <string name="total_distance_route">Total Distance: </string>
+    <string name="total_duration_route">Total Duration: </string>
+
+
+    <!-- trip route power -->
+    <string name="trip_route_power">Trip Route with Power</string>
+
+    <!-- Speed Graph -->
+    <string name="speed_graph">Speed Graph</string>
+    <string name="speed_in_kph">Speed in km/h</string>
+
+    <!--  summary -->
+    <string name="summary">Summary</string>
+    <string name="location_not_available">Location: Not Available</string>
+    <string name="location">Location:</string>
+
+    <!-- Vehicle List -->
+    <string name="vehicle_list_summary">Vehicle Summary(Last 24 hours) </string>
+    <string name="vehicle_list">Vehicle List </string>
+
+    <string name="green_driving_score">Green Driving Score: </string>
+
+    <!-- Dialog Box -->
+    <string name="maintenance">Maintenance</string>
+
+    <string name="dialog_box_title">Processing...</string>
+    <string name="dialog_box_msg">Please wait while your request is being processed.</string>
+
+    <string name="permission_msg">Enable location services to run the application</string>
+
+    <string name="last_update">Last Update: </string>
+    <string name="current_location">Current Location</string>
+
+    <string name="regixCircle" translatable="false">\\((.*?)\\)</string>
+    <string name="CANCEL" translatable="false">CANCEL</string>
+    <string name="OK">OK</string>
+
+
+    <string name="no_internet_response">"Check Your Internet Connection."</string>
+    <string name="invalid_credentials_response">"Wrong Username/Password"</string>
+    <string name="invalid_input_response">"Invalid Input"</string>
+    <string name="late_response">Sorry, our servers are undergoing scheduled maintenance. Please try again in about 30 minutes.</string>
+
+    <string name="no_immobilizer_response">Not Available for this device.</string>
+    <string name="immobilizer_enabled">Immobilizer ENABLED.</string>
+    <string name="immobilizer_disabled">Immobilizer DISABLED.</string>
+
+
+    <string name="find_me">Find Me</string>
+
+    <string name="defaul_">Default</string>
+    <string name="kilometer">km</string>
+    <string name="hours">hrs</string>
+    <string name="minutes">mins</string>
+    <string name="KM_per_hour">km/h</string>
+    <string name="online">ONLINE</string>
+    <string name="offline">OFFLINE</string>
+
+
+    <string name="detail">Day</string>
+    <string name="custom_date_10">Custom (max. 10) Days</string>
+    <string name="custom_date_31">Custom (max. 31) Days</string>
+    <string name="select_history">Select History:</string>
+    <string name="Km_H_35">35 km/h</string>
+    <string name="Km_H_70">70 km/h</string>
+    <string name="normal">Normal(mins)</string>
+    <string name="idling">Idling(mins)</string>
+    <string name="KM_per_hour_live">Speed :</string>
+    <string name="enabled_permission">Are you sure you want to ENABLE the immobiliser?</string>
+    <string name="disabled_permission">Are you sure you want to DISABLE the immobiliser?</string>
+
+
+    <string name="geofence_enter">Geofence Enter</string>
+    <string name="geofence_exit">Geofence Exit</string>
+    <string name="power_cut">Power Cut</string>
+    <string name="tow">Tow</string>
+    <string name="trfa_button_change_language">Eng/اردوُ‎</string>
+    <string name="days_limit_exceeds_10">Please select max. 10 days</string>
+    <string name="days_limit_exceeds_30">Please select max. 31 days</string>
+    <string name="select_atleast_two_days">Select at least two dates</string>
+    <string name="error">Error</string>
+
+    <string name="success">Success</string>
+    <string name="search">Search</string>
+    <string name="enter_your_credentials" translatable="false">Enter your credentials for login.</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="update_your_device_trip">Please upgrade your device</string>
+    <string name="logout_msg">You have successfully logout.</string>
+    <string name="spedd_is_over_40_kph">Speed is Over 40 KPH!</string>
+    <string name="on_map">On Map</string>
+    <string name="want_to_retry">Want to retry?</string>
+    <string name="app_version_msg">Please update your app with the new version.</string>
+    <string name="engine_oil" translatable="false">ENGINE OIL</string>
+    <string name="calculate_engine_oil_hours" translatable="false">Calculate Engine Hours</string>
+    <string name="last_engine_oil" translatable="false">Last Engine Oil Change Time</string>
+    <string name="last_filter" translatable="false">Last Filter Change Time</string>
+    <string name="last_engine_hour" translatable="false">Engine Hour</string>
+    <string name="calculate_total_distance_travelled" translatable="false">Calculate total distance and Engine hours</string>
+    <string name="total_distance_travel" translatable="false">Total distance travel:</string>
+    <string name="update_time" translatable="false">Update Time</string>
+    <string name="air_filter" translatable="false">AIR FILTER</string>
+    <string name="engine_oil_results">Engine Oil Results</string>
+    <string name="total_engine_hours_oil">Total Engine Hours</string>
+    <string name="filter_results">Filter Results</string>
+    <!--    <string name="custom_date">Custom (max. 7) Days</string>-->
+
+
+</resources>

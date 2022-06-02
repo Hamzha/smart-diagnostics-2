@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_large" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/login_logo_description"
+                    android:src="@drawable/tracking_logo" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_large" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:maxLines="1"
+                    android:text="@string/welcome_to_smart_tracking_txt"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@color/colorLogoDark"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:text="@string/sign_in_to_continue"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/blue_grey_300" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/login_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/username_txt"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/colorLogoDark" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorLogoDark"
+                        android:theme="@style/EditText.Blue" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_m_large" />
+
+                    <TextView
+                        android:id="@+id/passowrd_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/password_txt"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/colorLogoDark" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:inputType="textPassword"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorLogoDark"
+                        android:theme="@style/EditText.Blue" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_mx_large" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <com.wang.avi.AVLoadingIndicatorView
+                            android:id="@+id/progress_login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:foregroundGravity="center"
+                            android:visibility="visible"
+                            app:indicatorColor="@color/colorLogoDark"
+
+                            />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/login_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:background="@drawable/btn_rounded"
+                        android:backgroundTint="@color/blue_200"
+                        android:text="@string/sign_in_txt"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        tools:ignore="UnusedAttribute" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_medium" />
+
+                <LinearLayout
+                    android:id="@+id/sign_up_for_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/remember_checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/blue_grey_400"
+                        android:foregroundTint="@color/blue_grey_400"
+                        tools:ignore="UnusedAttribute" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/remember_me_txt"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/blue_grey_400" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_xlarge" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sweetDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

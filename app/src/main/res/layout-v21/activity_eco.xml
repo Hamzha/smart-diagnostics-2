@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="activity.Eco">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/speedGraph_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/Toolbar.Light"
+            app:titleTextColor="@color/blue_700" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/eco_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="@color/blue_700"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/top_bar_start_date_txt"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/calendar_arrow"
+            android:contentDescription="@string/calender_arrow_description"
+            android:rotation="-90"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/eco_end_date"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/top_bar_end_date_txt"
+            android:textColor="@color/blue_900"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:orientation="vertical">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_chart_eco"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:layout_marginRight="@dimen/spacing_large" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#FFA500"
+                    tools:ignore="UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:text="@string/over_speeding_txt"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#8b008b"
+                    tools:ignore="UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:text="@string/harsh_braking_txt"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#0000FF"
+                    tools:ignore="UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:text="@string/harsh_cornering_txt"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#FFFF00"
+                    tools:ignore="UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:text="@string/harsh_acceleration_txt"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#FF0000"
+                    tools:ignore="UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:text="@string/idle_txt"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_chart"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing_medium" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/marker_dialog_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:layout_marginRight="@dimen/spacing_large"
+                android:background="@drawable/round"
+                android:padding="@dimen/spacing_medium"
+                app:cardCornerRadius="@dimen/spacing_medium"
+                app:cardElevation="@dimen/spacing_small">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10sp"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/harsh_acceleration_txt"
+                            android:textColor="@color/colorLogoDark"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/harsh_acceleration"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorLogoDark"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10sp"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/harsh_braking_txt"
+                            android:textColor="@color/colorLogoDark"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/harsh_breaking"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorLogoDark"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10sp"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10sp"
+                            android:layout_weight="1"
+                            android:text="@string/harsh_cornering_txt"
+                            android:textColor="@color/colorLogoDark"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/harsh_cornering"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorLogoDark"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10sp"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/over_speeding_txt"
+                            android:textColor="@color/colorLogoDark"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/over_speed"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorLogoDark"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10sp"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/idle_txt"
+                            android:textColor="@color/colorLogoDark"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/idle"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10sp"
+                            android:layout_weight="2"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorLogoDark"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginRight="10sp"
+                android:text="@string/harsh_breaking_msg"
+                android:textColor="@color/colorLogoLight" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="@string/harsh_acceleration_msg"
+                android:textColor="@color/colorLogoLight" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="@string/idle_msg"
+                android:textColor="@color/colorLogoLight" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="@string/harsh_corner_msg"
+                android:textColor="@color/colorLogoLight" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_margin="10sp"
+                android:text="@string/over_speeding_msg"
+                android:textColor="@color/colorLogoLight" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

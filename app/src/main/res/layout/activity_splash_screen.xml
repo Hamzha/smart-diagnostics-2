@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context="activity.SplashScreen">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="244dp"
+        android:contentDescription="@string/splash_spleen_logo_description"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tracking_logo" />
+
+    <ImageView
+        android:id="@+id/logoText"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="444dp"
+        android:contentDescription="@string/splash_screen_title_description"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/smart_diagnostics" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="217dp"
+        android:layout_height="7dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="492dp"
+        android:background="@drawable/progress_bar_router"
+        android:progressDrawable="@drawable/splash_screen_progress_bar"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:style="@style/Widget.AppCompat.ProgressBar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

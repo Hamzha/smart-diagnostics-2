@@ -1,0 +1,283 @@
+<resources>
+
+    <string name="top_bar_start_date_txt">شروع کی تاریخ</string>
+    <string name="calender_arrow_description">calender_arrow</string>
+    <string name="top_bar_end_date_txt">End Date</string>
+    <string name="app_name" translatable="false">Smart Diagnostics</string>
+    <string name="not_available">معلومات موجود نہیں</string>
+
+    <!-- About Activity -->
+    <string name="about">کمپنی معلومات</string>
+    <string name="version">2.2.3</string>
+    <string name="version_txt">Version</string>
+    <string name="last_update_txt">آخری رابطہ</string>
+    <string name="last_update_date_txt">August 2019</string>
+    <string name="our_team_txt">عملہ</string>
+    <string name="dr_zeeshan_g_txt">ڈاکٹرذیشان</string>
+    <string name="raheem_txt">رحیم تنگ</string>
+    <string name="imran_g_txt">عمران گیلانی</string>
+    <string name="haseeb_ali_txt">حسیب علی</string>
+    <string name="hamza_a_txt">حمزہ احمد</string>
+    <string name="moazzam_n_txt">معظم نعمان</string>
+    <string name="address_title_txt">پتہ</string>
+    <string name="address_txt">دفتر نمبر 11 فرست فلور، سنٹر گلبرگ 3 </string>
+    <string name="city_txt"> لاہور پنجاب پاکستان</string>
+    <string name="city_code_txt">54000</string>
+
+    <!-- Eco Report Activity -->
+    <string name="trip_behaviour">چکر کی معلومات</string>
+    <string name="harsh_acceleration_txt"> : ایکسیلریشن</string>
+    <string name="harsh_braking_txt"> : سخت بریک</string>
+    <string name="harsh_cornering_txt"> : تیزی سے مڑنا</string>
+    <string name="over_speeding_txt"> : تیز رفتاری</string>
+    <string name="idle_txt"> : جامد/ساکت </string>
+    <string name="harsh_breaking_msg">سخت بریک : چکر میں کتنی دفعہ سخت بریک لگائی</string>
+    <string name="harsh_acceleration_msg">تیز رفتاری : کتنی دفعہ تیز رفتاری کی</string>
+    <string name="idle_msg">جامد/ساکت : کتنی دفعہ ایک جگہ کھڑی رہی</string>
+    <string name="harsh_corner_msg">تیزی سے مڑنا: کتنی دفعہ تیز رفتاری سے مڑا</string>
+    <string name="over_speeding_msg">تیز رفتاری : کتنی دفعہ تیز چلائی</string>
+    <string name="pie_chart_cornering">مڑنا</string>
+    <string name="pie_chart_acceleration">ایکسیلریشن</string>
+    <string name="pie_chart_braking"> سخت بریک</string>
+    <string name="pie_chart_speeding">تیزرفتاری</string>
+    <string name="pie_chart_idling"> ساکت</string>
+    <string name="pie_chart_title">گاڑی کے ساتھ سلوک</string>
+
+    <!-- Park Lock Activity -->
+    <string name="park_lock">پارکنگ لاک</string>
+    <string name="top_bar_park_lock_txt">پارکنگ لاک</string>
+    <string name="car_name_txt"> : گاڑی کا نمبر</string>
+    <string name="current_status_txt"> : موجودہ حالت</string>
+    <string name="vehicle_category_txt"> : گاڑی کی قسم</string>
+    <string name="vehicle_model_txt"> : گاڑی کا ماڈل</string>
+    <string name="park_lock_txt"> : پارک لاک</string>
+    <string name="key_chain_description">Key Chain</string>
+    <string name="park_lock_unlock">کھلا ہوا</string>
+    <string name="park_lock_locked">بند</string>
+
+    ِ
+    <string name="car">کار</string>
+    <string name="tubewell">ٹیوب ویل</string>
+    <string name="bus">بس</string>
+    <string name="crane">کرین</string>
+    <string name="offroad">کچے راستے کی گاڑی</string>
+    <string name="pickup">پک اپ</string>    <!---->
+    <string name="tractor">ٹریکٹر</string>
+    <string name="truck">ٹرک</string>
+    <string name="van">وین</string>
+    <string name="motorcycle">موٹرسائیکل</string>
+    <!---->
+    <!--کچے راستے کی گاڑی-->
+    <!--پک اپ-->
+    <!--ٹریکٹر-->
+    <!--ٹرک-->
+    <!--وین-->
+
+    <!-- option dialog box -->
+    <string name="park_lock_dialog_box">پارک لاک</string>
+
+
+    <!-- Login Activity -->
+    <string name="login_logo_description">Login Logo</string>
+    <string name="welcome_to_smart_tracking_txt">سمارٹ ڈائیگنوزٹکس</string>
+    <string name="sign_in_to_continue">استعمال کرنےکیلئےمعلومات درج کریں</string>
+    <string name="username_txt">صارف کا نام</string>
+    <string name="password_txt">پاس ورڈ</string>
+    <string name="sign_in_txt">داخل  ہوں</string>
+    <string name="remember_me_txt">یاد رکھیں</string>
+
+
+    <!-- Main Activity -->
+    <string name="logout_txt">باہر نکلیں</string>
+    <string name="vehicles_description">Vehicles</string>
+    <string name="vehicles_txt">گاڑٰیاں</string>
+    <string name="quit_msg">آپ بند کرنا چاہتے ہی؟</string>
+    <string name="quit_option_yes">ہاں</string>
+    <string name="quit_option_no">نہیں</string>
+    <string name="trfa_button_vehicle_list">گاڑیاں</string>
+    <string name="trfa_button_summary_list">گاڑیوں کی تفصیل</string>
+    <string name="trfa_button_geo_fence">باڑدکھانا/چھپانا</string>
+    <string name="trfa_button_about">کمپنی معلومات</string>
+    <string name="trfa_button_change_map">نقشہ کی تبدیلی</string>
+    <string name="bird_eye_view">Bird Eye View</string>
+
+
+    <!-- Splash Screen -->
+    <string name="splash_spleen_logo_description">Splash Spleen Logo</string>
+    <string name="splash_screen_title_description">splashScreenTitle</string>
+    <string name="maintenance">دیکھ بھال</string>
+
+
+    <!-- Activity Summery -->
+    <string name="total_trips_txt"> :مجموعی چکر</string>
+    <string name="total_average_speed_txt"> :اوسط رفتار</string>
+    <string name="total_top_speed_txt">:تیز ترین رفتار</string>
+    <string name="total_distance_txt"> :مجموعی فاصلہ </string>
+    <string name="total_trip_distance_txt">Total Trip Distance: </string>
+
+    <string name="total_duration_txt"> :مجموعی دورانیہ</string>
+
+    <!-- Activity Trip -->
+    <string name="no_trips_txt">کوئی سفر نہیں</string>
+    <string name="exit_txt">باہر نکلیں</string>
+    <string name="car_number_txt">گاڑی کا نمبر</string>
+    <string name="Trip">سفر کی تفصیل</string>
+
+
+    <string name="total_trips_route">مجموعی چکر:</string>
+    <string name="total_average_route">اوسط رفتار:</string>
+    <string name="total_top_speed_route">تیز ترین رفتار:</string>
+    <string name="total_distance_route">مجموعی فاصلہ:</string>
+    <string name="total_duration_route">مجموعی دورانیہ:</string>
+
+
+    <!-- Card View for Car-->
+    <string name="marker_close_description" translatable="false">marker Close</string>
+
+
+    <!-- Trip Item Card -->
+    <string name="ignition_on_txt">انجن اسٹارٹ</string>
+    <string name="ignition_start_address_txt">اسٹارٹ ہونے کی جگہ</string>
+    <string name="ignition_off_txt">انجن بند</string>
+    <string name="ignition_stop_address_txt">انجن بند ہونے کی جگہ</string>
+    <string name="duration_txt">دورانیہ :</string>
+    <string name="distance_travel_txt"> : فاصلہ</string>
+    <string name="estimate_distance_txt"> : اندازاً فاصلہ</string>
+    <string name="speed_graph_description">Speed Graph</string>
+    <string name="view_on_map_description">View On Map</string>
+    <string name="driving_behaviour_description">Driving Behaviour</string>
+    <string name="idling_description">Idling</string>
+    <string name="view_trip_details_description">View Trip Details</string>
+    <string name="extra_description">Extra</string>
+
+
+    <!-- Compact Adaptor -->
+    <string name="signal_description">Signal</string>
+    <string name="satelite_description">setalite_description</string>
+
+
+    <!-- Event Activity -->
+    <string name="event">مواقع</string>
+    <string name="no_event_txt">کوئی موقع نہیں</string>
+
+
+    <!-- idle Activity -->
+    <string name="idle_graph">ساکت/جامد حالت کا چارٹ</string>
+    <string name="idle_enter">ساکت ہوا</string>
+    <string name="idle_exit">ساکن حالت سے نکلا</string>
+
+
+
+    <!-- live tracking -->
+    <string name="live_tacking">آن لائن نگرانی</string>
+
+    <!-- Vehicle Detail -->
+    <string name="vehicle_details">گاڑی کی معلومات</string>
+
+    <!-- Trip Route -->
+    <string name="trip_route">چکر کا راستہ</string>
+    <string name="start_point">سفر کی شروعات</string>
+    <string name="end_point">سفر کا اختتام</string>
+    <string name="harsh_acceleration_txt_route">ایکسیلریشن</string>
+    <string name="harsh_braking_txt_route"> سخت بریک</string>
+    <string name="harsh_cornering_txt_route"> تیزی سے مڑنا</string>
+    <string name="over_speeding_txt_route"> تیز رفتاری</string>
+    <string name="idle_txt_route">جامد/ساکت </string>
+
+    <!-- trip route power -->
+    <string name="trip_route_power">انجن کا بلاوجہ ذور لگوانا</string>
+
+    <!-- Speed Graph -->
+    <string name="speed_graph"> رفتار کا چارٹ</string>
+    <string name="speed_in_kph">کلومیڑمیں رفتار</string>
+
+    <!--  summary -->
+    <string name="summary"> تفصیلات</string>
+    <string name="location_not_available"> نامعلوم مقام</string>
+    <string name="location"> مقام :</string>
+
+    <!-- Vehicle List -->
+    <string name="vehicle_list_summary">گاڑیوں کی تفصیلات(24 گھنٹے)</string>
+    <string name="vehicle_list">گاڑیوں کی فہرست</string>
+
+    <string name="find_me">گاڑی کہاں ہے</string>
+
+    <string name="days_limit_exceeds_10"> پچھلے 10 دنوں کی معلومات حاصل کرنے کیلئے دوبارہ کوشش کریں۔</string>
+    <string name="days_limit_exceeds_30"> پچھلے 30 دنوں کی معلومات حاصل کرنے کیلئے دوبارہ کوشش کریں۔</string>
+
+    <string name="green_driving_score"> محفوظ سفر</string>
+
+    <!-- Dialog Box -->
+    <string name="dialog_box_title"> کام ہورہاہے</string>
+    <string name="dialog_box_msg"> انتظار فرمائیں آپ کا کام ہورہا ہے</string>
+
+    <string name="permission_msg"> پروگرام کو چلانے کیلئے اجازت درکار ہے</string>
+
+    <string name="last_update">آخری رابطہ :</string>
+    <string name="current_location">موجودہ جگہ :</string>
+
+    <string name="regixCircle">\\((.*?)\\)</string>
+    <string name="CANCEL">منسوخ کریں</string>
+    <string name="OK">ٹھیک ہے</string>
+
+
+    <string name="no_internet_response">اپنا انٹرنیٹ کنکشن چیک کریں."</string>
+    <string name="invalid_credentials_response">غلط صارف</string>
+    <string name="invalid_input_response">غلط اندراج</string>
+    <string name="late_response">Sorry, our servers are undergoing scheduled maintaince. Please try again in about 30 minutes.</string>
+    <string name="want_to_retry">دوبارہ کوشش کرنا چاہتے ہیں؟</string>
+
+
+    <string name="no_immobilizer_response">اس گاڑی کے لئے پارک لاک کی سہولت میسر نہیں</string>
+    <string name="immobilizer_enabled"> پارک لاگ لگ کیا ہے</string>
+    <string name="immobilizer_disabled"> پارک لاک کھل گیا ہے</string>
+
+
+    <string name="defaul_">عام</string>
+    <string name="kilometer">کلومیٹر</string>
+
+    <string name="hours">گھنٹے</string>
+    <string name="minutes">منٹ</string>
+    <string name="KM_per_hour">کلومیٹرفی گھنٹہ</string>
+    <string name="online">آن لائن</string>
+    <string name="offline">آف لائن</string>
+
+    <string name="detail">دن کی تفصیل</string>
+    <string name="custom_date_10">کوئی سے 10 دن</string>
+    <string name="custom_date_31">کوئی سے 31 دن</string>
+    <string name="select_atleast_two_days">کم از کم 2 دنمنتخب کریں۔</string>
+
+    <string name="select_history"> دنوں کے حساب سے تفصیل :</string>
+
+
+    <string name="Km_H_35">35 کلومیٹرفی گھنٹہ</string>
+    <string name="Km_H_70">70 کلومیٹرفی گھنٹہ</string>
+
+    <string name="normal">معمول(منٹ)</string>
+    <string name="idling">ساکت(منٹ)</string>
+    <string name="KM_per_hour_live"> کلومیٹرفی گھنٹہ : </string>
+    <string name="enabled_permission">کیا آپ اپنی گاڑی کو پارک لاک چاہتے ہیں؟</string>
+
+    <string name="disabled_permission">کیا آپ اپنی گاڑی کا پارک لاک ختم کرنا چاہتے ہیں؟</string>
+
+    <string name="geofence_enter">باڑ میں داخل ہوا</string>
+    <string name="geofence_exit">باڑ سے نکل</string>
+    <string name="power_cut">بیٹری کنکشن منقطع</string>
+
+    <string name="tow">گاڑی کوکھیچاجارہاہے</string>
+    <string name="error">غلطی</string>
+
+    <string name="trfa_button_change_language">Eng/اُردُو‎</string>
+
+    <string name="success">کام ہوگیاہے</string>
+    <string name="search">Search</string>
+
+
+    <string name="update_your_device_trip"> برائے مہربانی یہ سہولت استعمال کرنے کے لیے ڈیواس اپ گریڈ کراوین.</string>
+
+    <string name="logout_msg"> کامیابی سے لاگ آوٹ کر چھکے ہیں۔</string>
+    <string name="spedd_is_over_40_kph">رفتار 40 کلو میٹرفی گھنٹہ سے زیادہ ہے!</string>
+    <string name="on_map"> نقشہ پر</string>
+    <string name="app_version_msg">مہربانی فرما کر سمارٹ ایپ کا نیا ورژن اپڈیٹ کرلیں.</string>
+
+</resources>

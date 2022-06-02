@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/marker_dialog_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/spacing_large"
+    android:layout_marginTop="@dimen/spacing_large"
+    android:layout_marginRight="@dimen/spacing_large"
+    android:background="@drawable/round"
+    android:padding="@dimen/spacing_medium"
+    app:cardCornerRadius="@dimen/spacing_large"
+    app:cardElevation="@dimen/spacing_small">
+
+    <LinearLayout
+
+        android:id="@+id/main_marker_dialog_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:elevation="@dimen/spacing_medium"
+        android:orientation="vertical"
+        tools:ignore="UnusedAttribute">
+
+
+        <LinearLayout
+            android:id="@+id/main_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_small"
+            tools:ignore="UselessParent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/main_marker_dialog_top_image_info"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20sp"
+                app:civ_border_color="@color/grey_5"
+                app:civ_border_width="1dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10sp"
+                android:layout_weight="10"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/main_dialog_name"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5.5"
+                    android:textColor="@color/grey_80"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    tools:ignore="NestedWeights,RtlHardcoded" />
+
+                <ImageView
+                    android:id="@+id/signal_poser"
+                    android:layout_width="0sp"
+                    android:layout_height="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"
+                    android:contentDescription="@string/signal_description"
+                    tools:ignore="RtlHardcoded" />
+
+                <ImageView
+                    android:id="@+id/satellite"
+                    android:layout_width="0sp"
+                    android:layout_height="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"
+                    android:contentDescription="@string/satelite_description"
+                    tools:ignore="RtlHardcoded" />
+
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:id="@+id/battery_lvl"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/grey_80"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    tools:ignore="NestedWeights,RtlHardcoded" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70sp"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_weight="3.5"
+                android:id="@+id/last_update"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/grey_80"
+                android:textSize="13sp"
+                android:textStyle="normal"
+                tools:ignore="NestedWeights,RtlHardcoded" />
+
+            <TextView
+                android:layout_weight="3.5"
+                android:id="@+id/fuel_compact"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/grey_80"
+                android:textSize="13sp"
+                android:textStyle="normal"
+                tools:ignore="NestedWeights,RtlHardcoded" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smart.agriculture.solutions.vechicle.vehicletracker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".SmartTracker"
+        android:allowBackup="false"
+        android:fullBackupContent="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/launching_icon_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:minSdkVersion="8"
+        android:roundIcon="@mipmap/launching_icon_logo"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute"
+        tools:replace="android:icon,android:supportsRtl,android:allowBackup">
+        <activity
+            android:name="activity.SummaryTrip"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.Demo"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="activity.VehicleListSummary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.VehicleDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.LiveVehicle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.Eco"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.Idle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.RoutePower"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.Speed"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="activity.Fuel"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="activity.Route"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.Summary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.Event"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@layout/searchable" />
+        </activity>
+        <activity
+            android:name="activity.Immobilizer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.About"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.Trip"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.VehicleListCompact"
+            android:screenOrientation="portrait" />
+
+       
+
+        <activity android:name="activity.SplashScreen" />
+        <activity
+            android:name="activity.Login"
+            android:noHistory="true" />
+        <activity
+            android:name="activity.VehicleList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.OnScreen"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="activity.VehicleListCompactNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.Maintenance"
+            android:screenOrientation="portrait" />
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        
+    </application>
+
+</manifest>

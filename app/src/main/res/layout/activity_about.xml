@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/Toolbar.Light" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_xlarge"
+                android:layout_marginTop="@dimen/spacing_xlarge"
+                android:layout_marginEnd="@dimen/spacing_xlarge"
+                android:orientation="vertical"
+                android:paddingBottom="?attr/actionBarSize">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welcome_to_smart_tracking_txt"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/grey_90"
+                    app:fontFamily="sans-serif-light" />
+
+                <View
+                    android:layout_width="230dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:background="@color/blue_700" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_large" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/version_txt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/grey_40" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/version"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/grey_90" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_large" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/last_update_txt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/grey_40" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/last_update_date_txt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/grey_90" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_mx_large" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_mx_large" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/blue_700" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:gravity="center"
+                    android:text="@string/our_team_txt"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/grey_90"
+                    app:fontFamily="sans-serif-medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_large"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:layout_marginRight="@dimen/spacing_large"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:civ_border="true"
+                            app:civ_border_color="@color/grey_10"
+                            app:civ_border_width="2dp"
+                            app:civ_shadow="true"
+                            app:civ_shadow_radius="0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_medium"
+                            android:text="@string/dr_zeeshan_g_txt"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/grey_90"
+                            app:fontFamily="sans-serif-medium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/grey_60"
+                            app:fontFamily="sans-serif-light" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/raheem"
+                            app:civ_border="true"
+                            app:civ_border_color="@color/grey_10"
+                            app:civ_border_width="2dp"
+                            app:civ_shadow="true"
+                            app:civ_shadow_radius="0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_medium"
+                            android:text="@string/raheem_txt"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/grey_90"
+                            app:fontFamily="sans-serif-medium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/grey_60"
+                            app:fontFamily="sans-serif-light" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:civ_border="true"
+                            app:civ_border_color="@color/grey_10"
+                            app:civ_border_width="2dp"
+                            app:civ_shadow="true"
+                            app:civ_shadow_radius="0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_medium"
+                            android:text="@string/imran_g_txt"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/grey_90"
+                            app:fontFamily="sans-serif-medium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/grey_60"
+                            app:fontFamily="sans-serif-light" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_large"
+                    android:layout_marginTop="@dimen/spacing_m_large"
+                    android:layout_marginRight="@dimen/spacing_large"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:civ_border="true"
+                            app:civ_border_color="@color/grey_10"
+                            app:civ_border_width="2dp"
+                            app:civ_shadow="true"
+                            app:civ_shadow_radius="0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_medium"
+                            android:text="@string/haseeb_ali_txt"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/grey_90"
+                            app:fontFamily="sans-serif-medium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/grey_60"
+                            app:fontFamily="sans-serif-light" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/hamza"
+                            app:civ_border="true"
+                            app:civ_border_color="@color/grey_10"
+                            app:civ_border_width="2dp"
+                            app:civ_shadow="true"
+                            app:civ_shadow_radius="0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_medium"
+                            android:text="@string/hamza_a_txt"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/grey_90"
+                            app:fontFamily="sans-serif-medium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/grey_60"
+                            app:fontFamily="sans-serif-light" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moz"
+                            app:civ_border="true"
+                            app:civ_border_color="@color/grey_10"
+                            app:civ_border_width="2dp"
+                            app:civ_shadow="true"
+                            app:civ_shadow_radius="0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_medium"
+                            android:text="@string/moazzam_n_txt"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/grey_90"
+                            app:fontFamily="sans-serif-medium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/grey_60"
+                            app:fontFamily="sans-serif-light" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/spacing_m_large"
+                    android:paddingTop="@dimen/spacing_large"
+                    android:paddingRight="@dimen/spacing_m_large"
+                    android:paddingBottom="@dimen/spacing_large">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/address_title_txt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/grey_90"
+                        app:fontFamily="sans-serif-medium" />
+
+                    <fragment
+                        android:id="@+id/about_map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="@dimen/spacing_large" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_middle"
+                        android:text="@string/address_txt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_60" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/city_txt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_60" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/city_code_txt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_60" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

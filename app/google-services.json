@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "72698925280",
+    "firebase_url": "https://vehicletracker-9ed53.firebaseio.com",
+    "project_id": "vehicletracker-9ed53",
+    "storage_bucket": "vehicletracker-9ed53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72698925280:android:823cec2a696f0543",
+        "android_client_info": {
+          "package_name": "com.smart.agriculture.solutions.vechicle.vehicletracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72698925280-h2oi7cqad6i4pjitrppm4p7ogvgfbo6j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smart.agriculture.solutions.vechicle.vehicletracker",
+            "certificate_hash": "29df0a0df980cdd7a5e54ecfa14b1d7367792f54"
+          }
+        },
+        {
+          "client_id": "72698925280-gjrau3ok65c02kh9147ea2us5rt9qv2f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFpWpNBCc4XjCSt3IdjsOkrQWe7iaYyKs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72698925280-gjrau3ok65c02kh9147ea2us5rt9qv2f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72698925280:android:0619d7a3c5341e57",
+        "android_client_info": {
+          "package_name": "com.smartagriculturesolutions.smarttracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72698925280-60gq8pfjdhealo784enn6mvfp06s0pm1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smartagriculturesolutions.smarttracking",
+            "certificate_hash": "29df0a0df980cdd7a5e54ecfa14b1d7367792f54"
+          }
+        },
+        {
+          "client_id": "72698925280-gjrau3ok65c02kh9147ea2us5rt9qv2f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFpWpNBCc4XjCSt3IdjsOkrQWe7iaYyKs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72698925280-gjrau3ok65c02kh9147ea2us5rt9qv2f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

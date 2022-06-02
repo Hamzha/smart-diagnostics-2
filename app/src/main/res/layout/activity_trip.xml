@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="activity.Trip">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/Toolbar.Light"
+            app:titleTextColor="@color/colorPrimary" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/trip_activity_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="@color/blue_700"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/top_bar_start_date_txt"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/calendar_arrow"
+            android:clickable="true"
+            android:contentDescription="@string/calender_arrow_description"
+            android:focusable="true"
+            android:rotation="-90"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/trip_activity_end_date"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/top_bar_end_date_txt"
+            android:textColor="@color/blue_900"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/grey_10"
+            android:scrollbars="none"
+            android:scrollingCache="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/no_trips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30sp"
+                    android:text="@string/no_trips_txt"
+                    android:textSize="30sp"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/trips_recycler_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    tools:listitem="@layout/trip_item_card_view"
+                    />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/progress_trips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center"
+            android:visibility="visible"
+            app:indicatorColor="@color/blue_700"
+            app:indicatorName="BallGridPulseIndicator" />
+
+    </RelativeLayout>
+</LinearLayout>

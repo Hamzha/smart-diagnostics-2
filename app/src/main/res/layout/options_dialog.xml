@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20sp"
+    android:layout_marginRight="20sp">
+
+    <LinearLayout
+        android:id="@+id/marker_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5sp"
+        android:orientation="vertical"
+        tools:targetApi="lollipop">
+
+
+        <LinearLayout
+            android:id="@+id/marker_dialog_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/dialog_bt_close"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/marker_close_description"
+                android:tint="@color/grey_20"
+                app:srcCompat="@drawable/ic_close"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="100dp"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_small">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/marker_dialog_top_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:civ_border_color="@color/grey_5"
+                app:civ_border_width="1dp" />
+
+
+            <TextView
+                android:id="@+id/marker_dialog_top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:text="@string/car_name_txt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/grey_80"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/marker_dialog_top_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_middle"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:layout_marginRight="@dimen/spacing_middle"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_40"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/follow_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="120sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/btn_rounded"
+                android:clickable="false"
+                android:paddingStart="@dimen/spacing_m_large"
+                android:paddingEnd="@dimen/spacing_m_large"
+                android:text=""
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2sp"
+            android:background="@color/grey_300"
+            tools:ignore="SmallSp" />
+
+        <LinearLayout
+            android:id="@+id/marker_dialog_info"
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginTop="0sp"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/total_trips"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_trips_txt"
+                        android:textColor="@color/grey_1000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/summary_total_trips_dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_1000"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/avg_speed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_average_speed_txt"
+                        android:textColor="@color/grey_1000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/summary_avg_speed_dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_1000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/max_speed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_top_speed_txt"
+                        android:textColor="@color/grey_1000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/summary_max_speed_dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_1000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/total_distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_distance_txt"
+                        android:textColor="@color/grey_1000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/summary_total_distance_dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_1000"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/total_duration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_duration_txt"
+                        android:textColor="@color/grey_1000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/summary_total_duration_dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_1000"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2sp"
+            android:background="@color/grey_300"
+            tools:ignore="SmallSp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/route_to_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spacing_medium"
+                    android:text="@string/find_me"
+                    android:theme="@style/Button.Primary"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/trips_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:gravity="center"
+                    android:text="@string/Trip"
+                    android:theme="@style/Button.Primary"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/mobilizer_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spacing_medium"
+                    android:backgroundTint="@color/red_900"
+                    android:text="@string/park_lock_dialog_box"
+                    android:textColor="#fff"
+                    android:theme="@style/Button.White.Primary"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="lollipop" />
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/track_it_live_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:backgroundTint="@color/red_900"
+                    android:gravity="center"
+                    android:text="Live Tracking"
+                    android:theme="@style/Button.Accent"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/event_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spacing_medium"
+                    android:backgroundTint="@color/purple_400"
+                    android:text="@string/event"
+                    android:textColor="#fff"
+                    android:theme="@style/Button.White.Primary"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="lollipop" />
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/summary_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:backgroundTint="@color/purple_400"
+                    android:gravity="center"
+                    android:text="@string/summary"
+                    android:theme="@style/Button.Accent"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
